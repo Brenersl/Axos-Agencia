@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const whatsappNumber = "5511999999999"; // Substitua pelo número real
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da NexusLab Digital.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da Axos.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
         <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-primary font-medium">Agência Digital Futurista</span>
+          <span className="text-sm text-primary font-medium">Agência de UX</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight">

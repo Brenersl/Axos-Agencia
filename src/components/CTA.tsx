@@ -3,7 +3,7 @@ import { MessageCircle, Mail, Phone } from "lucide-react";
 
 const CTA = () => {
   const whatsappNumber = "5511999999999"; // Substitua pelo número real
-  const whatsappMessage = encodeURIComponent("Olá! Quero iniciar meu projeto com a NexusLab Digital.");
+  const whatsappMessage = encodeURIComponent("Olá! Quero iniciar meu projeto com a Axos.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -50,11 +50,11 @@ const CTA = () => {
               <span>+55 (11) 99999-9999</span>
             </a>
             <a 
-              href="mailto:contato@nexuslabdigital.com"
+              href="mailto:contato@axos.com.br"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Mail className="w-4 h-4" />
-              <span>contato@nexuslabdigital.com</span>
+              <span>contato@axos.com.br</span>
             </a>
           </div>
         </div>

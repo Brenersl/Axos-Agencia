@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import axosLogo from "@/assets/axos-logo.png";
 
 const Footer = () => {
   return (
@@ -7,11 +8,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo and text */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-              NexusLab Digital
-            </h3>
+            <img src={axosLogo} alt="Axos" className="h-12 mb-2 mx-auto md:mx-0" />
             <p className="text-sm text-muted-foreground">
-              Transformando visões em experiências digitais
+              Agência de UX - Transformando visões em experiências digitais
             </p>
           </div>
 
@@ -40,7 +39,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} NexusLab Digital. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Axos. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
