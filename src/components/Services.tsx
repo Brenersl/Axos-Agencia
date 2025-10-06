@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Palette, Layout, Zap, Users } from "lucide-react";
+import { Palette, Layout, Zap, Users, Globe, Terminal } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -8,6 +8,18 @@ const Services = () => {
       title: "Landing Pages",
       description: "Páginas de alta conversão otimizadas para transformar visitantes em clientes. Design responsivo e performance excepcional.",
       features: ["Design Responsivo", "SEO Otimizado", "Alta Conversão", "Integração Completa"]
+    },
+    {
+      icon: Globe,
+      title: "Desenvolvimento de Sites",
+      description: "Sites institucionais e corporativos completos, com design moderno e funcionalidades personalizadas para sua empresa.",
+      features: ["Sites Institucionais", "E-commerce", "Portfólios", "CMS Personalizado"]
+    },
+    {
+      icon: Terminal,
+      title: "Desenvolvimento de Sistemas",
+      description: "Sistemas web sob medida para automatizar processos e otimizar a gestão do seu negócio. Soluções escaláveis e seguras.",
+      features: ["Sistemas Customizados", "Dashboards", "APIs", "Integrações"]
     },
     {
       icon: Palette,
@@ -43,7 +55,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
