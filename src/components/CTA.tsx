@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Mail, Phone } from "lucide-react";
 
 const CTA = () => {
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
+  const whatsappNumber = "5535984318351"; // 
   const whatsappMessage = encodeURIComponent("Olá! Quero iniciar meu projeto com a Axos.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -47,7 +47,7 @@ const CTA = () => {
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>+55 (11) 99999-9999</span>
+              <span>+55 (35) 98431-8351</span>
             </a>
             <a 
               href="mailto:contato@axos.com.br"

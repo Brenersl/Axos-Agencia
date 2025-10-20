@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
+  const whatsappNumber = "5535984318351"; // Substitua pelo número real
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da Axos.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
