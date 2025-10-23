@@ -19,7 +19,6 @@ const Footer = () => {
             {[
               { icon: Instagram, href: "#" },
               { icon: Linkedin, href: "#" },
-              { icon: Twitter, href: "#" },
             ].map((social, index) => {
               const Icon = social.icon;
               return (
