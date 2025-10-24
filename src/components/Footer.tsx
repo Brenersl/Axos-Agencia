@@ -1,6 +1,26 @@
 import { Instagram, Linkedin, Twitter } from "lucide-react";
 import axosLogo from "@/assets/axos-logo.png";
 
+// 1. Dados das Redes Sociais extraídos para uma constante
+const socialLinks = [
+  { 
+    icon: Instagram, 
+    href: "https://www.instagram.com/axoscreative/", // Substitua pelo seu link real
+    name: "Instagram" 
+  },
+  // Exemplo de como adicionar outros links:
+  // { 
+  //   icon: Linkedin, 
+  //   href: "https://www.linkedin.com/company/SEU_PERFIL", 
+  //   name: "LinkedIn" 
+  // },
+  // { 
+  //   icon: Twitter, 
+  //   href: "https://twitter.com/SEU_USUARIO", 
+  //   name: "Twitter" 
+  // },
+];
+
 const Footer = () => {
   return (
     <footer className="relative py-12 border-t border-border">
@@ -16,17 +36,16 @@ const Footer = () => {
 
           {/* Social links */}
           <div className="flex gap-4">
-            {[
-              { icon: Instagram, href: "#" },
-              { icon: Linkedin, href: "#" },
-            ].map((social, index) => {
+            {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
                 <a
-                  key={index}
+                  // 2. Usando o nome da rede social como 'key' em vez do 'index'
+                  key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Link para o nosso ${social.name}`} // 3. Adicionado para acessibilidade (SEO/Leitores de tela)
                   className="w-10 h-10 rounded-full bg-card border border-border hover:border-primary flex items-center justify-center transition-all duration-300 hover:shadow-glow-primary hover:scale-110"
                 >
                   <Icon className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
